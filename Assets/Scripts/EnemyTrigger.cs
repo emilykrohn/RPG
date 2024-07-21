@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyTrigger : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class EnemyTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Hit");
+            SceneManager.LoadScene("Battle");
         }
     }
 }
