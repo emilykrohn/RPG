@@ -20,3 +20,15 @@
     margin-bottom: 50px;
     margin-left: 50px;
 }
+
+.status {
+    width: 680px;
+    height: 200px;
+    min-height: auto;
+    max-height: 200px;
+    background-image: url("project://database/Assets/Sprites/textbox.png?fileID=1562527876&guid=3ba5b4694c25adf4381f29b362670eb2&type=3#textbox_8");
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}

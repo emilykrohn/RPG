@@ -1,9 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=e236134f3e2ce994f93138d946c88ad6&amp;type=3#BattleUIStyle" />
-    <ui:VisualElement name="Container" style="flex-grow: 1;" />
-    <ui:GroupBox style="position: relative; align-items: stretch; justify-content: flex-start; align-self: flex-end; flex-direction: row;">
-        <ui:Button text="Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" style="visibility: visible; display: flex;" />
-        <ui:Button text="Items" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
-        <ui:Button text="Run" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
-    </ui:GroupBox>
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: column-reverse; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgb(255, 255, 255); background-image: none; width: 1920px; height: 1080px;">
+        <ui:GroupBox style="position: relative; align-items: center; justify-content: space-between; align-self: flex-end; flex-direction: row;">
+            <ui:Button text="Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" style="visibility: visible; display: flex;" />
+            <ui:Button text="Items" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
+            <ui:Button text="Run" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
+        </ui:GroupBox>
+        <ui:VisualElement class="status" style="flex-grow: 1; position: absolute; flex-direction: column; align-items: flex-start; justify-content: flex-end; bottom: 15%; left: 1%;" />
+        <ui:VisualElement class="status" style="flex-grow: 1; align-self: flex-end; position: absolute; top: 1%; right: 1%;" />
+    </ui:VisualElement>
 </ui:UXML>
