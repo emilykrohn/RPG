@@ -1,3 +1,5 @@
 # Auto detect text files and perform LF normalization
-* text=auto eol=lf
-*.cs text eol=crlf
+* eol=lf
+*.cs eol=crlf
+*.uxml eol=crlf
+*.uss eol=crlf

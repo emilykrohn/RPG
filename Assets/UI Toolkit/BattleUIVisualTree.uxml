@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=e236134f3e2ce994f93138d946c88ad6&amp;type=3#BattleUIStyle" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; position: relative; width: auto; height: 200px; align-self: flex-end; flex-direction: row; align-items: auto; justify-content: flex-end; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px;">
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
