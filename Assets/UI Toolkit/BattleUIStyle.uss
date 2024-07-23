@@ -23,7 +23,7 @@
 
 .status {
     width: 680px;
-    height: 200px;
+    height: 150px;
     min-height: auto;
     max-height: 200px;
     background-image: url("project://database/Assets/Sprites/textbox.png?fileID=1562527876&guid=3ba5b4694c25adf4381f29b362670eb2&type=3#textbox_8");
