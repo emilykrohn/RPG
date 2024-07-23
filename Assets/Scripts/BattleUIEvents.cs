@@ -19,6 +19,8 @@ public class BattleUIEvents : MonoBehaviour
 
     void OnClick(ClickEvent evt)
     {
-        Debug.Log("test");
+        document.rootVisualElement.Q("MenuGroupBox").style.display = DisplayStyle.None;
+        document.rootVisualElement.Q("AttackGroupBox").style.display = DisplayStyle.Flex;
+
     }
 }
