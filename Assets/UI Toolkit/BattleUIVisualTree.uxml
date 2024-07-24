@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/BattleUIStyle.uss?fileID=7433441132597879392&amp;guid=e236134f3e2ce994f93138d946c88ad6&amp;type=3#BattleUIStyle" />
     <ui:VisualElement name="BattleSceneContainer" style="flex-grow: 1; flex-direction: column-reverse; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgb(255, 255, 255); background-image: none; width: 1920px; height: 1080px;">
-        <ui:GroupBox name="MenuGroupBox" style="position: relative; align-items: center; justify-content: space-between; align-self: flex-end; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/textbox.png?fileID=1562527876&amp;guid=3ba5b4694c25adf4381f29b362670eb2&amp;type=3#textbox_8&quot;); visibility: visible; display: flex;">
+        <ui:GroupBox name="MenuGroupBox" class="menu enabledMenus" style="position: relative; align-items: center; justify-content: space-between; align-self: flex-end; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/textbox.png?fileID=1562527876&amp;guid=3ba5b4694c25adf4381f29b362670eb2&amp;type=3#textbox_8&quot;);">
             <ui:Button text="Attack" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Attack" class="button" />
             <ui:Button text="Items" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Items" class="button" />
             <ui:Button text="Run" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Run" class="button" style="display: flex;" />
         </ui:GroupBox>
-        <ui:GroupBox name="AttackGroupBox" style="position: absolute; flex-direction: column; background-image: url(&quot;project://database/Assets/Sprites/textbox.png?fileID=1562527876&amp;guid=3ba5b4694c25adf4381f29b362670eb2&amp;type=3#textbox_8&quot;); align-self: flex-end; width: auto; display: none;">
+        <ui:GroupBox name="AttackGroupBox" class="disabledMenus menu" style="position: absolute; flex-direction: column; background-image: url(&quot;project://database/Assets/Sprites/textbox.png?fileID=1562527876&amp;guid=3ba5b4694c25adf4381f29b362670eb2&amp;type=3#textbox_8&quot;); align-self: flex-end; width: auto;">
             <ui:GroupBox style="flex-direction: row;">
                 <ui:Button text="Attack 1" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />
                 <ui:Button text="Attack 2" parse-escape-sequences="true" display-tooltip-when-elided="true" class="button" />

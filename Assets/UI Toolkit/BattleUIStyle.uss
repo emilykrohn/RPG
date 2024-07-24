@@ -56,3 +56,13 @@
     left: 2%;
     font-size: 40px;
 }
+
+.disabledMenus {
+    display: none;
+}
+
+.menu {
+}
+
+.enabledMenus {
+}
