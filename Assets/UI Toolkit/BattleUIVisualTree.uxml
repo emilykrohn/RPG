@@ -7,10 +7,10 @@
             <ui:Button text="Run" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Run" class="button" style="display: flex;" />
         </ui:GroupBox>
         <ui:GroupBox name="AttackGroupBox" class="disabledMenus menu" style="position: absolute; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/textbox.png?fileID=1562527876&amp;guid=3ba5b4694c25adf4381f29b362670eb2&amp;type=3#textbox_8&quot;); align-self: flex-end; width: auto;">
-            <ui:Button text="Attack 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FirstAttack" class="button attackButton" />
-            <ui:Button text="Attack 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondAttack" class="button attackButton" />
-            <ui:Button text="Attack 3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThirdAttack" class="button attackButton" />
-            <ui:Button text="Attack 4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FourthAttack" class="button attackButton" />
+            <ui:Button text="Attack 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Attack1" class="button attackButton unselectedAttack" />
+            <ui:Button text="Attack 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Attack2" class="button attackButton unselectedAttack" />
+            <ui:Button text="Attack 3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Attack3" class="button attackButton unselectedAttack" />
+            <ui:Button text="Attack 4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Attack4" class="button attackButton unselectedAttack" />
         </ui:GroupBox>
         <ui:VisualElement name="PlayerStats" class="status" style="flex-grow: 1; position: absolute; flex-direction: column; align-items: auto; justify-content: flex-end; bottom: 18%; left: 0;">
             <ui:Label tabindex="-1" text="Player" parse-escape-sequences="true" display-tooltip-when-elided="true" class="statsLabel" />

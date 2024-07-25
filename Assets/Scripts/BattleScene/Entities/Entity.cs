@@ -8,5 +8,5 @@ public class Entity : ScriptableObject
     [SerializeField] private string entityName;
     [SerializeField] private int entityHealth;
     [SerializeField] private int entityLevel;
-    [SerializeField] private List<Attack> attackList = new List<Attack>();
+    [SerializeField] public List<Attack> attackList = new List<Attack>();
 }

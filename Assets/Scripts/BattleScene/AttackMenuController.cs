@@ -23,9 +23,9 @@ public class AttackMenuController
     private void AttackButtonOnClick(ClickEvent evt)
     {
         Button clickedButton = evt.currentTarget as Button;
-        if (clickedButton.name == "FirstAttack") Debug.Log("FirstAttack");
-        else if (clickedButton.name == "SecondAttack") Debug.Log("SecondAttack");
-        else if (clickedButton.name == "ThirdAttack") Debug.Log("ThirdAttack");
-        else Debug.Log("FourthAttack");
+        if (clickedButton.name == "Attack1") Debug.Log("FirstAttack");
+        else if (clickedButton.name == "Attack2") Debug.Log("SecondAttack");
+        else if (clickedButton.name == "Attack3") Debug.Log("ThirdAttack");
+        else Debug.Log("Attack4");
     }
 }

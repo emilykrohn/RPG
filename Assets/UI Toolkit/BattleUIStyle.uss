@@ -69,3 +69,11 @@
 
 .attackButton {
 }
+
+.selectedAttack {
+}
+
+.unselectedAttack {
+    display: flex;
+    visibility: hidden;
+}

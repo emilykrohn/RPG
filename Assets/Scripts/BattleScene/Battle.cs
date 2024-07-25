@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Battle : MonoBehaviour
 {
-    [SerializeField] Entity player;
-    [SerializeField] Entity enemy;
+    public Entity player;
+    public Entity enemy;
 }
