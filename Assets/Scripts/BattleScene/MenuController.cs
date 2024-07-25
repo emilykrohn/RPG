@@ -1,4 +1,5 @@
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 public class MenuController
 {
     private const string menuClassName = "menu";
@@ -16,6 +17,9 @@ public class MenuController
     {
         Button attack = root.Q<Button>("Attack") as Button;
         attack.RegisterCallback<ClickEvent>(AttackOnClick);
+
+        Button run = root.Q<Button>("Run") as Button;
+        run.RegisterCallback<ClickEvent>(RunOnClick);
     }
 
     private void AttackOnClick(ClickEvent evt)
@@ -29,6 +33,11 @@ public class MenuController
 
             EnableMenu(menuToEnable);
         }
+    }
+
+    private void RunOnClick(ClickEvent evt)
+    {
+        SceneManager.LoadScene("OverWorld");
     }
 
     private UQueryBuilder<GroupBox> GetAllMenus()
