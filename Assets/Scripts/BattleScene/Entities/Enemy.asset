@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f75cac260d29e54fb87f621e5344e13, type: 3}
   m_Name: Enemy
   m_EditorClassIdentifier: 
-  entityName: Enemy
-  entityHealth: 10
-  entityLevel: 1
+  health: 10
+  level: 1
+  attackList: []

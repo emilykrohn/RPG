@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     private MenuController controller;
     private AttackMenuController attackController;
+    private StatHealthBar healthBar;
 
     private void OnEnable()
     {
@@ -16,8 +17,10 @@ public class Menu : MonoBehaviour
 
         controller = new(root);
         attackController = new(root);
+        healthBar = new(root);
 
         controller.RegisterMenuCallbacks();
         attackController.RegisterAttackCallbacks();
+        healthBar.RegisterHealthBarCallBacks();
     }
 }

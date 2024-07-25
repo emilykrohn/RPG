@@ -14,11 +14,11 @@
         </ui:GroupBox>
         <ui:VisualElement name="PlayerStats" class="status" style="flex-grow: 1; position: absolute; flex-direction: column; align-items: auto; justify-content: flex-end; bottom: 18%; left: 0;">
             <ui:Label tabindex="-1" text="Player" parse-escape-sequences="true" display-tooltip-when-elided="true" class="statsLabel" />
-            <ui:ProgressBar value="100" class="progressBar" />
+            <ui:ProgressBar value="100" name="PlayerHealthBar" class="progressBar" />
         </ui:VisualElement>
         <ui:VisualElement name="EnemyStats" class="status" style="flex-grow: 1; align-self: auto; position: absolute; top: 1%; right: 1%; align-items: auto; justify-content: flex-end;">
             <ui:Label tabindex="-1" text="Enemy" parse-escape-sequences="true" display-tooltip-when-elided="true" class="statsLabel" />
-            <ui:ProgressBar value="100" class="progressBar" />
+            <ui:ProgressBar value="100" name="EnemyHealthBar" class="progressBar" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
