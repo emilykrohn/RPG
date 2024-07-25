@@ -30,7 +30,12 @@ public class AttackMenuController
     private void AttackButtonOnClick(ClickEvent evt)
     {
         Button clickedButton = evt.currentTarget as Button;
-        if (clickedButton.name == "Attack1") enemy.health -= player.attackList[0].attackDamage;
+        ProgressBar enemyHealth = root.Q("EnemyHealthBar") as ProgressBar;
+        if (clickedButton.name == "Attack1")
+        {
+            enemy.health -= player.attackList[0].attackDamage;
+            enemyHealth.value = enemy.health;
+        }
         else if (clickedButton.name == "Attack2" && player.attackList.Count >= 2) Debug.Log("SecondAttack");
         else if (clickedButton.name == "Attack3" && player.attackList.Count >= 3) Debug.Log("ThirdAttack");
         else if (player.attackList.Count >= 4) Debug.Log("FourthAttack");
