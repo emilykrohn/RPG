@@ -8,14 +8,15 @@ public class AttackMenuController
 
     private Battle battle;
     private Entity player;
-    private Entity enemy;
+    private Enemy enemy;
 
     public AttackMenuController(VisualElement root)
     {
         this.root = root;
         battle = GameObject.Find("UI").GetComponent<Battle>();
+        enemy = GameObject.Find("UI").GetComponent<Enemy>();
+
         player = battle.player;
-        enemy = battle.enemy;
     }
 
     public void RegisterAttackCallbacks()
@@ -33,8 +34,11 @@ public class AttackMenuController
         ProgressBar enemyHealth = root.Q("EnemyHealthBar") as ProgressBar;
         if (clickedButton.name == "Attack1")
         {
-            enemy.health -= player.attackList[0].attackDamage;
-            enemyHealth.value = enemy.health;
+            if (enemy.health > 0)
+            {
+                enemy.health -= player.attackList[0].attackDamage;
+                enemyHealth.value = enemy.health;
+            }
         }
         else if (clickedButton.name == "Attack2" && player.attackList.Count >= 2) Debug.Log("SecondAttack");
         else if (clickedButton.name == "Attack3" && player.attackList.Count >= 3) Debug.Log("ThirdAttack");
