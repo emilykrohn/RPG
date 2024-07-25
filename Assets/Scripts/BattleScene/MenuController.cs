@@ -47,8 +47,9 @@ public class MenuController
 
             for (int i = 0;  i < attackAmount; i++)
             {
-                EnableAttack(root.Q<Button>("Attack" + (i + 1).ToString()));
-                Debug.Log("1");
+                Button currentButton = root.Q<Button>("Attack" + (i + 1).ToString());
+                EnableAttack(currentButton);
+                currentButton.text = battle.player.attackList[i].name;
             }
 
             EnableMenu(menuToEnable);
