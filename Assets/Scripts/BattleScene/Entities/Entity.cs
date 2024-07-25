@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Entity", menuName = "ScriptableObjects/Entity", order = 2)]
 public class Entity : ScriptableObject
 {
-    public string entityName;
-    public int entityHealth;
-    public int entityLevel;
+    [SerializeField] private string entityName;
+    [SerializeField] private int entityHealth;
+    [SerializeField] private int entityLevel;
+    [SerializeField] private List<Attack> attackList = new List<Attack>();
 }

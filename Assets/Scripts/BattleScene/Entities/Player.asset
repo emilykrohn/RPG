@@ -15,3 +15,5 @@ MonoBehaviour:
   entityName: Player
   entityHealth: 10
   entityLevel: 1
+  attackList:
+  - {fileID: 11400000, guid: 27eef434f4fc0a7429dde8b197c6f818, type: 2}
